@@ -107,10 +107,10 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         };
         symbol_layer {
             bindings = <
-            &kp HU_APOS    &kp HU_DQT     &kp HU_GRAVE      &kp HU_PERCENT    ___                ___           &kp HOME          &kp UP          &kp END       &kp PAGE_UP
-            &kp HU_LT     &kp HU_LBKT     &kp HU_LPAR       &kp HU_LBRC       ___                ___           &kp LEFT          &kp DOWN        &kp RIGHT     &kp PAGE_DOWN
-    ___     &kp HU_GT     &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       ___                ___           &kp TILDE         ___             &kp FSLH      ___          ___
-                                       ___            ___             ___                &kp RET       &kp BSPC          &kp DEL
+            &kp HU_APOS   &kp HU_DQT      &kp HU_GRAVE      &kp HU_CARET      &kp HU_PERCENT         &kp HU_BSLH        ___          ___          ___      ___
+            &kp HU_LT     &kp HU_LBKT     &kp HU_LPAR       &kp HU_LBRC       &kp HU_EXCL            &kp HU_PIPE        &kp HU_SEMI          &kp HU_DOLLAR        &kp HU_EURO     ___
+    ___     &kp HU_GT     &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       ___                    ___        &kp HU_TILDE         ___             &kp FSLH      ___          ___
+                                          &kp HU_HASH       &kp HU_AMPS       &kp HU_AT              ___       ___          ___
             >;
         };
         num_layer {
