@@ -101,7 +101,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             bindings = <
                 &kp HU_Q         &kp HU_W         &kp HU_E            &kp HU_R          &kp HU_T           &kp HU_Z     &kp HU_U          &kp HU_I            &kp HU_O         &kp HU_P
                 &hml LGUI HU_A  &hml LALT HU_S    &hml LSHIFT HU_D    &hml LCTRL HU_F   &kp HU_G           &kp HU_H     &hmr RCTRL HU_J   &hmr RSHIFT HU_K    &hmr LALT HU_L   &hmr RGUI HU_E_ACUTE
-&kp HU_I_ACUTE  &kp HU_Y         &kp HU_X         &kp HU_C            &kp HU_V          &kp HU_B           &kp HU_N     &kp HU_M          &kp HU_COMMA   &kp HU_PERIOD     &kp HU_MINUS        &kp HU_A_ACUTE
+&kp LS(HU_I_ACUTE)  &kp HU_Y         &kp HU_X         &kp HU_C            &kp HU_V          &kp HU_B           &kp HU_N     &kp HU_M          &kp HU_COMMA   &kp HU_PERIOD     &kp HU_MINUS        &kp HU_A_ACUTE
                                               &kp ESC        &lt NUM TAB         &lt LSHFT SPACE          &lt FUN RET      &lt SYM BSPC       &kp DEL
             >;
         };
