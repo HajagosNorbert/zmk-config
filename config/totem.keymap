@@ -99,10 +99,10 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-            &kp HU_Q         &kp HU_W         &kp HU_E            &kp HU_R            &kp HU_T              &kp HU_Z         &kp HU_U              &kp HU_I            &kp HU_O         &kp HU_P
-            &hml LCTRL HU_A  &hml LALT HU_S   &hml LGUI HU_D      &hml LSHFT HU_F     &kp HU_G              &kp HU_H         &hmr RSHFT HU_J       &hmr RGUI HU_K      &hmr LALT HU_L   &hmr RCTRL HU_E_ACUTE
-&kp TAB     &kp HU_Y         &kp HU_X         &kp HU_C            &kp HU_V            &kp HU_B              &kp HU_N         &kp HU_M         &kp HU_COMMA   &kp HU_PERIOD     &kp HU_MINUS        &kp HU_A_ACUTE
-                                              &lt UTIL ESC        &sk LSHFT           &lt SYM SPACE         &kp RET       &lt NUM BSPC       &lt FUN DEL
+            &kp HU_Q         &kp HU_W         &kp HU_E            &kp HU_R            &kp HU_T           &kp HU_Z     &kp HU_U              &kp HU_I            &kp HU_O         &kp HU_P
+            &hml LCTRL HU_A  &hml LALT HU_S   &hml LGUI HU_D      &hml LSHFT HU_F     &kp HU_G           &kp HU_H     &hmr RSHFT HU_J       &hmr RGUI HU_K      &hmr LALT HU_L   &hmr RCTRL HU_E_ACUTE
+&kp TAB     &kp HU_Y         &kp HU_X         &kp HU_C            &kp HU_V            &kp HU_B           &kp HU_N     &kp HU_M              &kp HU_COMMA   &kp HU_PERIOD     &kp HU_MINUS        &kp HU_A_ACUTE
+                                              &lt UTIL ESC        &lt NUM TAB         &lt SYM SPACE      &kp RET      &lt SYM BSPC       &lt FUN DEL
             >;
         };
         symbol_layer {
