@@ -8,6 +8,7 @@
            ╰────────────┴────────────╯                     ╰─────────────┴─────────────╯             */
 
 
+#include "keys_hu.h"
 // use require-prior-idle-ms for combos
 #undef COMBO_HOOK
 #define COMBO_HOOK require-prior-idle-ms = <150>;
@@ -60,6 +61,15 @@ ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,     BASE SYM NUM, COMBO_TERM_FAST)
 ZMK_COMBO(lt,    &kp LT,        RM0 RM1,     BASE SYM NUM, COMBO_TERM_FAST)
 ZMK_COMBO(gt,    &kp GT,        RM3 RM4,     BASE SYM NUM, COMBO_TERM_FAST)
 
+
+
+ZMK_COMBO(ö,     &kp HU_O_UMLAUT,        RT1 RT2,     BASE, COMBO_TERM_FAST)
+ZMK_COMBO(ü,     &kp HU_U_UMLAUT,        RT2 RT3,     BASE, COMBO_TERM_FAST)
+ZMK_COMBO(ó,     &kp HU_O_ACUTE,         RT3 RT4,     BASE, COMBO_TERM_FAST)
+
+ZMK_COMBO(ő,     &kp HU_O_DOUBLE_ACUTE,  MT1 MT2,     BASE, COMBO_TERM_FAST)
+ZMK_COMBO(ú,     &kp HU_U_ACUTE,         MT2 MT3,     BASE, COMBO_TERM_FAST)
+ZMK_COMBO(ű,     &kp HU_U_DOUBLE_ACUTE,  MT3 MT4,     BASE, COMBO_TERM_FAST)
 
 // caps word on index fingers
 ZMK_COMBO(capsw, &caps_word,    LM1 RM1,     BASE SYM NUM, COMBO_TERM_FAST)
