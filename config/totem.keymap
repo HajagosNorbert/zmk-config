@@ -16,7 +16,7 @@
 #define SYM 1
 #define NUM 2
 #define FUN 3
-#define UTIL 4
+#define GAME 4
 
 #include "combos.dtsi"
 
@@ -109,7 +109,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             bindings = <
             &kp HU_APOS   &kp HU_DQT      &kp HU_GRAVE      &kp HU_CARET      &kp HU_PERCENT         &kp HU_BSLH        ___          ___          ___      ___
             &kp HU_LT     &kp HU_LBKT     &kp HU_LPAR       &kp HU_LBRC       &kp HU_EXCL            &kp HU_PIPE        &kp HU_SEMI          &kp HU_DOLLAR        &kp HU_EURO     ___
-    ___     &kp HU_GT     &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       ___                    ___        &kp HU_TILDE         ___             &kp FSLH      ___          ___
+    ___     &kp HU_GT     &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       ___                    ___        &kp HU_TILDE         ___             ___      ___          ___
                                           &kp HU_HASH       &kp HU_AMPS       &kp HU_AT              ___       ___          ___
             >;
         };
@@ -118,18 +118,18 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             &kp KP_NUMLOCK  &kp HOME         &kp UP             &kp END             ___          &kp HU_STAR           &kp HU_N7       &kp HU_N8          &kp  HU_N9      &kp HU_PLUS
             &kp LGUI        &hml LALT LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    ___          &kp HU_EQUAL          &kp HU_N4       &kp HU_N5          &kp  HU_N6      &kp HU_MINUS
   &kp LPAR  ___             &kp PG_UP        ___                &kp PG_DN           ___          &kp HU_SLASH          &kp HU_N1       &kp HU_N2          &kp  HU_N3      ___            &kp RPAR
-                                      ___             &kp  DOT        ___          ___           &kp HU_N0               ___
+                                      ___             ___        ___          ___           &kp HU_N0               ___
             >;
         };
         fun_layer {
             bindings = <
-            ___           ___         &kp C_VOL_UP      &kp C_BRI_UP          &kp PSCRN          &kp F12      &kp F7       &kp F8          &kp F9      &bt BT_SEL 2
-            ___           ___         &kp C_VOL_DN      &kp C_BRI_DN          ___                &kp F11      &kp F4       &kp F5          &kp F6      &bt BT_SEL 1
-    ___     ___           ___         &kp C_MUTE        &kp C_BKLT_TOG        ___                &kp F10      &kp F1       &kp F2          &kp F3      &bt BT_SEL 0     &bt BT_CLR
+            &bt BT_SEL 2           ___         &kp C_VOL_UP      &kp C_BRI_UP          &kp PSCRN          &kp F12      &kp F7       &kp F8          &kp F9      ___
+            &bt BT_SEL 1           ___         &kp C_VOL_DN      &kp C_BRI_DN          ___                &kp F11      &kp F4       &kp F5          &kp F6      ___
+&bt BT_CLR  &bt BT_SEL 0           ___         &kp C_MUTE        &kp C_BKLT_TOG        ___                &kp F10      &kp F1       &kp F2          &kp F3      ___    &tog GAME
                                       ___             ___             ___                        ___           ___               ___
             >;
         };
-        util_layer {
+        game_layer {
             bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_CLR      ___                ___           ___               &kp C_VOL_UP    ___           ___
             &kp LCTRL     &kp LALT     &kp LGUI       &kp LSHFT      ___                ___           ___                &kp C_VOL_DN    ___           ___
