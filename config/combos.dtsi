@@ -63,15 +63,15 @@
 
 
 // ö
-Z MK_COMBO(o_pont,           &kp HU_O_UMLAUT,        RT1 RT2,     BASE, COMBO_TERM_FAST)
+ZMK_COMBO(o_pont,           &kp HU_O_UMLAUT,        RT1 RT2,     BASE, COMBO_TERM_FAST)
 // ü
-Z MK_COMBO(u_pont,           &kp HU_U_UMLAUT,        RT2 RT3,     BASE, COMBO_TERM_FAST)
+ZMK_COMBO(u_pont,           &kp HU_U_UMLAUT,        RT2 RT3,     BASE, COMBO_TERM_FAST)
 // ó
-Z MK_COMBO(o_vesszo,         &kp HU_O_ACUTE,         RT3 RT4,     BASE, COMBO_TERM_FAST)
+ZMK_COMBO(o_vesszo,         &kp HU_O_ACUTE,         RT3 RT4,     BASE, COMBO_TERM_FAST)
 // ő
-Z MK_COMBO(o_duplavesszo,    &kp HU_O_DOUBLE_ACUTE,  MT1 MT2,     BASE, COMBO_TERM_FAST)
+ZMK_COMBO(o_duplavesszo,    &kp HU_O_DOUBLE_ACUTE,  MT1 MT2,     BASE, COMBO_TERM_FAST)
 // ú
-Z MK_COMBO(u_vesszo,         &kp HU_U_ACUTE,         MT2 MT3,     BASE, COMBO_TERM_FAST)
+ZMK_COMBO(u_vesszo,         &kp HU_U_ACUTE,         MT2 MT3,     BASE, COMBO_TERM_FAST)
 // ű
 ZMK_COMBO(u_duplavesszo,     &kp HU_U_DOUBLE_ACUTE,  MT3 MT4,     BASE, COMBO_TERM_FAST)
 
