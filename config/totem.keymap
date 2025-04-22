@@ -116,7 +116,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         num_layer {
             bindings = <
             &kp KP_NUMLOCK  &kp HOME         &kp UP             &kp END             ___          &kp HU_STAR           &kp HU_N7       &kp HU_N8          &kp  HU_N9      &kp HU_PLUS
-            &kp LGUI        &hml LALT LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    ___          &kp HU_EQUAL          &kp HU_N4       &kp HU_N5          &kp  HU_N6      &kp HU_MINUS
+            &kp LGUI        &hml LALT LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    ___          &kp HU_EQUAL          &hmr RCTRL HU_N4       &hmr RSHIFT HU_N5          &hmr LALT  HU_N6      &kp HU_MINUS
   ___       ___             &kp PG_UP        ___                &kp PG_DN           ___          &kp HU_SLASH          &kp HU_N1       &kp HU_N2          &kp  HU_N3      ___            ___
                                       ___             ___        ___                ___          &kp HU_N0             ___
             >;
