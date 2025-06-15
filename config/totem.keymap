@@ -96,8 +96,8 @@ ZMK_BEHAVIOR(hu_i_acute_morph, mod_morph,
             bindings = <
                 &kp HU_Q         &kp HU_W         &kp HU_E            &kp HU_R          &kp HU_T           &kp HU_Z     &kp HU_U          &kp HU_I            &kp HU_O         &kp HU_P
                 &hml LGUI HU_A  &hml LALT HU_S    &hml LSHIFT HU_D    &hml LCTRL HU_F   &kp HU_G           &kp HU_H     &hmr RCTRL HU_J   &hmr RSHIFT HU_K    &hmr LALT HU_L   &hmr RGUI HU_E_ACUTE
-&kp ESC &kp HU_Y         &kp HU_X         &kp HU_C            &kp HU_V          &kp HU_B           &kp HU_N     &kp HU_M          &kp HU_COMMA   &kp HU_PERIOD     &kp HU_MINUS        &kp HU_A_ACUTE
-                                              &kp ESC        &lt HUN TAB         &lt NUM SPACE          &lt SYM RET      &lt FUN BSPC       &kp DEL
+      &kp ESC   &kp HU_Y         &kp HU_X         &kp HU_C            &kp HU_V          &kp HU_B           &kp HU_N     &kp HU_M          &kp HU_COMMA   &kp HU_PERIOD     &kp HU_MINUS        &kp HU_A_ACUTE
+                                                  &sl HUN             &kp TAB           &lt NUM SPACE      &lt SYM RET  &lt FUN BSPC      &kp DEL
             >;
         };
         symbol_layer {
@@ -110,10 +110,10 @@ ___ &kp HU_GT     &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       &kp HU_BSL
         };
         num_layer {
             bindings = <
-            &kp KP_NUMLOCK  &kp HOME         &kp UP             &kp END             ___          ___          &kp HU_N7       &kp HU_N8          &kp  HU_N9      ___
-            &kp LGUI        &hml LALT LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    ___          ___          &hmr RCTRL HU_N4       &hmr RSHIFT HU_N5          &hmr LALT  HU_N6      ___
-  ___       ___             &kp LC(X)       &kp LC(C)           &kp LC(V)           &kp LS(LC(V))          ___          &kp HU_N1       &kp HU_N2          &kp  HU_N3      ___            ___
-                                      ___             ___        ___                ___          &kp HU_N0             ___
+            &kp KP_NUMLOCK  &kp HOME         &kp UP             &kp END             ___                  ___          &kp HU_N7         &kp HU_N8          &kp  HU_N9        ___
+            &kp LGUI        &hml LALT LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    &caps_word                  ___          &hmr RCTRL HU_N4  &hmr RSHIFT HU_N5  &hmr LALT  HU_N6  ___
+  ___       ___             &kp LC(X)        &kp LC(C)          &kp LC(V)           &kp LS(LC(V))        ___          &kp HU_N1         &kp HU_N2          &kp  HU_N3        ___            ___
+                                             ___                ___                 ___                  ___          &kp HU_N0         ___
             >;
         };
         hungarian_layer {
