@@ -15,14 +15,14 @@
 #define BASE 0
 #define SYM 1
 #define NUM 2
-#define FUN 3
-#define GAME 4
+#define HUN 3
+#define FUN 4
+#define GAME 5
 
 #include "combos.dtsi"
 
-// hyper and meh keys
+// hyper
 #define HYP LS(LC(LA(LGUI)))
-#define MEH LS(LC(LALT))
 
 /* ------------------------ general config ----------------------- */
 
@@ -71,7 +71,7 @@ MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
 // special HRMs for the right meh key, as it involves a modmorph
-MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
+// MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
 // MAKE_HRM(hmr_lpar, &kp, &lpar, KEYS_L THUMBS)    // "    "   "   "
 // MAKE_HRM(hmr_rpar, &kp, &rpar, KEYS_L THUMBS)    // "    "   "   "
 
@@ -82,15 +82,10 @@ ZMK_BEHAVIOR(qexcl, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: comma | shift + tap: semicolon
-ZMK_BEHAVIOR(comma_morph, mod_morph,
-    bindings = <&kp COMMA>, <&kp SEMICOLON>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-// tap: dot | shift + tap: colon
-ZMK_BEHAVIOR(dot_morph, mod_morph,
-    bindings = <&kp DOT>, <&kp COLON>;
+// tap: í | shift + tap: Í
+// just as it works in traditional keyboards
+ZMK_BEHAVIOR(hu_i_acute_morph, mod_morph,
+    bindings = <&kp HU_I_ACUTE>, <&kp HU_I_ACUTE_UPPER>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
@@ -101,24 +96,32 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             bindings = <
                 &kp HU_Q         &kp HU_W         &kp HU_E            &kp HU_R          &kp HU_T           &kp HU_Z     &kp HU_U          &kp HU_I            &kp HU_O         &kp HU_P
                 &hml LGUI HU_A  &hml LALT HU_S    &hml LSHIFT HU_D    &hml LCTRL HU_F   &kp HU_G           &kp HU_H     &hmr RCTRL HU_J   &hmr RSHIFT HU_K    &hmr LALT HU_L   &hmr RGUI HU_E_ACUTE
-&kp LS(HU_I_ACUTE)  &kp HU_Y         &kp HU_X         &kp HU_C            &kp HU_V          &kp HU_B           &kp HU_N     &kp HU_M          &kp HU_COMMA   &kp HU_PERIOD     &kp HU_MINUS        &kp HU_A_ACUTE
-                                              &kp ESC        &lt NUM TAB         &lt LSHFT SPACE          &lt FUN RET      &lt SYM BSPC       &kp DEL
+&kp ESC &kp HU_Y         &kp HU_X         &kp HU_C            &kp HU_V          &kp HU_B           &kp HU_N     &kp HU_M          &kp HU_COMMA   &kp HU_PERIOD     &kp HU_MINUS        &kp HU_A_ACUTE
+                                              &kp ESC        &sl HUN TAB         &lt NUM SPACE          &lt SYM RET      &lt FUN BSPC       &kp DEL
             >;
         };
         symbol_layer {
             bindings = <
-            &kp HU_APOS   &kp HU_DQT      &kp HU_GRAVE      &kp HU_CARET      &kp HU_PERCENT         &kp HU_BSLH        ___          ___          ___      ___
-            &kp HU_LT     &kp HU_LBKT     &kp HU_LPAR       &kp HU_LBRC       &kp HU_EXCL            &kp HU_PIPE        &kp HU_SEMI          &kp HU_DOLLAR        &kp HU_EURO     ___
-    ___     &kp HU_GT     &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       ___                    ___        &kp HU_TILDE         ___             ___      ___          ___
-                                          &kp HU_HASH       &kp HU_AMPS       &kp HU_AT              ___       ___          ___
+            &kp HU_APOS   &kp HU_DQT      &kp HU_GRAVE      &kp HU_PLUS       &kp HU_STAR            ___     ___          ___          ___      ___
+            &kp HU_LT     &kp HU_LBKT     &kp HU_LPAR       &kp HU_LBRC       &kp HU_EQUAL        &kp HU_PIPE        &kp HU_AT          &kp HU_DOLLAR        &kp HU_EURO     ___
+___ &kp HU_GT     &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       &kp HU_BSLH                    ___        &kp HU_TILDE            &kp RALT HU_Z             ___      ___          ___
+                                          &kp HU_HASH       &kp HU_AMPS       &kp HU_SEMI              ___       ___          ___
             >;
         };
         num_layer {
             bindings = <
-            &kp KP_NUMLOCK  &kp HOME         &kp UP             &kp END             ___          &kp HU_STAR           &kp HU_N7       &kp HU_N8          &kp  HU_N9      &kp HU_PLUS
-            &kp LGUI        &hml LALT LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    ___          &kp HU_EQUAL          &hmr RCTRL HU_N4       &hmr RSHIFT HU_N5          &hmr LALT  HU_N6      &kp HU_MINUS
-  ___       ___             &kp PG_UP        ___                &kp PG_DN           ___          &kp HU_SLASH          &kp HU_N1       &kp HU_N2          &kp  HU_N3      ___            ___
+            &kp KP_NUMLOCK  &kp HOME         &kp UP             &kp END             ___          ___          &kp HU_N7       &kp HU_N8          &kp  HU_N9      ___
+            &kp LGUI        &hml LALT LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    ___          ___          &hmr RCTRL HU_N4       &hmr RSHIFT HU_N5          &hmr LALT  HU_N6      ___
+  ___       ___             &kp LC(X)       &kp LC(C)           &kp LC(V)           &kp LS(LC(V))          ___          &kp HU_N1       &kp HU_N2          &kp  HU_N3      ___            ___
                                       ___             ___        ___                ___          &kp HU_N0             ___
+            >;
+        };
+        hungarian_layer {
+            bindings = <
+            ___  ___  ___        ___   ___                ___     &kp HU_U_ACUTE         &kp HU_I_ACUTE    &kp HU_O_UMLAUT       ___
+            ___  ___  &kp LSHIFT ___   ___                ___     &kp HU_U_UMLAUT        &kp HU_E_ACUTE    &kp HU_A_ACUTE        ___
+        ___ ___  ___  ___        ___   ___                ___     &kp HU_U_DOUBLE_ACUTE  &kp HU_O_ACUTE    &kp HU_O_DOUBLE_ACUTE ___    ___
+                            ___  ___   ___                ___     ___       ___
             >;
         };
         fun_layer {
