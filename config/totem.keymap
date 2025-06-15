@@ -102,28 +102,36 @@ ZMK_BEHAVIOR(hu_i_acute_morph, mod_morph,
         };
         symbol_layer {
             bindings = <
-            &kp HU_APOS   &kp HU_DQT      &kp HU_GRAVE      &kp HU_PLUS       &kp HU_STAR            ___     ___          ___          ___      ___
-            &kp HU_LT     &kp HU_LBKT     &kp HU_LPAR       &kp HU_LBRC       &kp HU_EQUAL        &kp HU_PIPE        &kp HU_AT          &kp HU_DOLLAR        &kp HU_EURO     ___
-___ &kp HU_GT     &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       &kp HU_BSLH                    ___        &kp HU_TILDE            &kp RALT HU_Z             ___      ___          ___
-                                          &kp HU_HASH       &kp HU_AMPS       &kp HU_SEMI              ___       ___          ___
+            &kp HU_APOS   &kp HU_DQT      &kp HU_GRAVE      &kp HU_PLUS       &kp HU_STAR            ___            ___                ___                  ___             ___
+            &kp HU_LT     &kp HU_LBKT     &kp HU_LPAR       &kp HU_LBRC       &kp HU_EQUAL           &kp HU_PIPE    &kp HU_AT          &kp HU_DOLLAR        &kp HU_EURO     ___
+     ___    &kp HU_GT     &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       &kp HU_BSLH            ___            &kp HU_TILDE       &kp RALT HU_Z        ___             ___    ___
+                                          &kp HU_HASH       &kp HU_AMPS       &kp HU_SEMI            ___            ___                ___
             >;
         };
         num_layer {
             bindings = <
             &kp KP_NUMLOCK  &kp HOME         &kp UP             &kp END             ___                  ___          &kp HU_N7         &kp HU_N8          &kp  HU_N9        ___
-            &kp LGUI        &hml LALT LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    &caps_word                  ___          &hmr RCTRL HU_N4  &hmr RSHIFT HU_N5  &hmr LALT  HU_N6  ___
+            &kp LGUI        &hml LALT LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    &caps_word           ___          &hmr RCTRL HU_N4  &hmr RSHIFT HU_N5  &hmr LALT  HU_N6  ___
   ___       ___             &kp LC(X)        &kp LC(C)          &kp LC(V)           &kp LS(LC(V))        ___          &kp HU_N1         &kp HU_N2          &kp  HU_N3        ___            ___
                                              ___                ___                 ___                  ___          &kp HU_N0         ___
             >;
         };
         hungarian_layer {
             bindings = <
-            ___  ___  ___        ___   ___                ___     &kp HU_U_ACUTE         &kp HU_I_ACUTE    &kp HU_O_UMLAUT       ___
-            ___  ___  &kp LSHIFT ___   ___                ___     &kp HU_U_UMLAUT        &kp HU_E_ACUTE    &kp HU_A_ACUTE        ___
-        ___ ___  ___  ___        ___   ___                ___     &kp HU_U_DOUBLE_ACUTE  &kp HU_O_ACUTE    &kp HU_O_DOUBLE_ACUTE ___    ___
-                            ___  ___   ___                ___     ___       ___
+            &bt BT_SEL 2           ___         &kp C_VOL_UP      &kp C_BRI_UP          &kp PSCRN          &kp F12      &kp F7       &kp F8          &kp F9      ___
+            &bt BT_SEL 1           ___         &kp C_VOL_DN      &kp C_BRI_DN          ___                &kp F11      &kp F4       &kp F5          &kp F6      ___
+&bt BT_CLR  &bt BT_SEL 0           ___         &kp C_MUTE        &kp C_BKLT_TOG        ___                &kp F10      &kp F1       &kp F2          &kp F3      ___    &tog GAME
+                                      ___             ___             ___                        ___           ___               ___
             >;
         };
+        // hungarian_layer {
+        //     bindings = <
+        //     ___  ___  ___        ___   ___                ___     &kp HU_U_ACUTE         &kp HU_I_ACUTE    &kp HU_O_UMLAUT       ___
+        //     ___  ___  &kp LSHIFT ___   ___                ___     &kp HU_U_UMLAUT        &kp HU_E_ACUTE    &kp HU_A_ACUTE        ___
+        // ___ ___  ___  ___        ___   ___                ___     &kp HU_U_DOUBLE_ACUTE  &kp HU_O_ACUTE    &kp HU_O_DOUBLE_ACUTE ___    ___
+        //                     ___  ___   ___                ___     ___       ___
+        //     >;
+        // };
         fun_layer {
             bindings = <
             &bt BT_SEL 2           ___         &kp C_VOL_UP      &kp C_BRI_UP          &kp PSCRN          &kp F12      &kp F7       &kp F8          &kp F9      ___
