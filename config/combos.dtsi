@@ -61,19 +61,5 @@
 // ZMK_COMBO(lt,    &kp LT,        RM0 RM1,     BASE SYM NUM, COMBO_TERM_FAST)
 // ZMK_COMBO(gt,    &kp GT,        RM3 RM4,     BASE SYM NUM, COMBO_TERM_FAST)
 
-
-// ö
-ZMK_COMBO(o_pont,           &kp HU_O_UMLAUT,        RT1 RT2,     BASE, COMBO_TERM_FAST)
-// ü
-ZMK_COMBO(u_pont,           &kp HU_U_UMLAUT,        RT2 RT3,     BASE, COMBO_TERM_FAST)
-// ó
-ZMK_COMBO(o_vesszo,         &kp HU_O_ACUTE,         RT3 RT4,     BASE, COMBO_TERM_FAST)
-// ő
-ZMK_COMBO(o_duplavesszo,    &kp HU_O_DOUBLE_ACUTE,  RB1 RB2,     BASE, COMBO_TERM_FAST)
-// ú
-ZMK_COMBO(u_vesszo,         &kp HU_U_ACUTE,         RB2 RB3,     BASE, COMBO_TERM_FAST)
-// ű
-ZMK_COMBO(u_duplavesszo,     &kp HU_U_DOUBLE_ACUTE, RB3 RB4,     BASE, COMBO_TERM_FAST)
-
 // caps word on index fingers
-ZMK_COMBO(capsw, &caps_word,             LM1 RM1,     BASE, COMBO_TERM_FAST)
+// ZMK_COMBO(capsw, &caps_word,             LM1 RM1,     BASE, COMBO_TERM_FAST)
