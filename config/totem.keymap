@@ -101,10 +101,10 @@ ZMK_BEHAVIOR(hu_i_acute_morph, mod_morph,
         };
         symbol_layer {
             bindings = <
-            &kp HU_APOS   &kp HU_DQT      &kp HU_GRAVE           &kp CARET   &kp HU_DOLLAR            ___ &kp HU_U_UMLAUT     &kp HU_I_ACUTE  &kp HU_O_UMLAUT                  ___
+            &kp HU_APOS   &kp HU_DQT      &kp HU_GRAVE           &kp HU_CARET   &kp HU_DOLLAR            ___ &kp HU_U_UMLAUT     &kp HU_I_ACUTE  &kp HU_O_UMLAUT                  ___
         &kp HU_LT     &kp HU_LBKT     &hml LSHIFT HU_LPAR    &kp HU_LBRC       &kp HU_EQUAL           &kp HU_PIPE    &kp HU_U_ACUTE    &kp HU_O_ACUTE     &kp HU_O_DOUBLE_ACUTE   &kp HU_U_DOUBLE_ACUTE
     ___  &kp HU_GT  &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       &kp HU_BSLH            &kp HU_STAR &kp HU_AT     &kp HU_TILDE &kp HU_AMPS            &kp HU_EURO    ___
-                                          &kp HU_HASH       &kp SLASH       &kp HU_SEMI            ___            ___                ___
+                                          &kp HU_HASH       &kp HU_SLASH       &kp HU_SEMI            ___            ___                ___
             >;
         };
         num_layer {
