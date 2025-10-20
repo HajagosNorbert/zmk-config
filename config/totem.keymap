@@ -94,33 +94,33 @@ ZMK_BEHAVIOR(hu_i_acute_morph, mod_morph,
         default_layer {
             bindings = <
                 &kp HU_Q         &kp HU_W         &kp HU_E            &kp HU_R          &kp HU_T           &kp HU_Z     &kp HU_U          &kp HU_I            &kp HU_O         &kp HU_P
-                &hml LGUI HU_A  &hml LALT HU_S    &hml LSHIFT HU_D    &hml LCTRL HU_F   &kp HU_G           &kp HU_H     &hmr RCTRL HU_J   &hmr RSHIFT HU_K    &hmr LALT HU_L   &hmr RGUI HU_E_ACUTE
+                &hml LALT HU_A  &hml LGUI HU_S    &hml LSHIFT HU_D    &hml LCTRL HU_F   &kp HU_G           &kp HU_H     &hmr RCTRL HU_J   &hmr RSHIFT HU_K    &hmr RGUI HU_L   &hmr LALT HU_E_ACUTE
       &kp ESC   &kp HU_Y         &kp HU_X         &kp HU_C            &kp HU_V          &kp HU_B           &kp HU_N     &kp HU_M          &kp HU_COMMA   &kp HU_PERIOD     &kp HU_MINUS        &kp HU_A_ACUTE
                                                   ___             &kp TAB           &lt NUM SPACE      &lt SYM RET  &lt FUN BSPC      &kp DEL
             >;
         };
         symbol_layer {
             bindings = <
-            &kp HU_APOS   &kp HU_DQT      &kp HU_GRAVE           &kp HU_CARET   &kp HU_DOLLAR            ___ &kp HU_U_UMLAUT     &kp HU_I_ACUTE  &kp HU_O_UMLAUT                  ___
+            &kp HU_APOS   &kp HU_DQT      &kp HU_GRAVE       &kp HU_CARET      &kp HU_DOLLAR          ___ &kp HU_U_UMLAUT     &kp HU_I_ACUTE  &kp HU_O_UMLAUT                  ___
         &kp HU_LT     &kp HU_LBKT     &hml LSHIFT HU_LPAR    &kp HU_LBRC       &kp HU_EQUAL           &kp HU_PIPE    &kp HU_U_ACUTE    &kp HU_O_ACUTE     &kp HU_O_DOUBLE_ACUTE   &kp HU_U_DOUBLE_ACUTE
-    ___  &kp HU_GT  &kp HU_RBKT     &kp HU_RPAR       &kp HU_RBRC       &kp HU_BSLH            &kp HU_STAR &kp HU_AT     &kp HU_TILDE &kp HU_AMPS            &kp HU_EURO    ___
-                                          &kp HU_HASH       &kp HU_SLASH       &kp HU_SEMI            ___            ___                ___
+    &kp HU_BSLH &kp HU_GT     &kp HU_RBKT     &kp HU_RPAR            &kp HU_RBRC       &kp HU_PLUS            &kp HU_STAR      &kp HU_TILDE &kp HU_AMPS &kp HU_AT           &kp HU_EURO    ___
+                                          &kp HU_HASH        &kp HU_SLASH      &kp HU_SEMI            ___            ___                ___
             >;
         };
         num_layer {
             bindings = <
-            &kp KP_NUMLOCK  &kp HOME         &kp UP             &kp END             ___                  ___          &kp HU_N7         &kp HU_N8          &kp  HU_N9        ___
-            &kp LGUI        &hml LALT LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    &caps_word           ___          &hmr RCTRL HU_N4  &hmr RSHIFT HU_N5  &hmr LALT  HU_N6  ___
-  ___       ___             &kp LC(X)        &kp LC(C)          &kp LC(V)           &kp LS(LC(V))        ___          &kp HU_N1         &kp HU_N2          &kp  HU_N3        ___            ___
-                                             ___                ___                 ___                  ___          &kp HU_N0         ___
+            &kp PG_UP       &kp HOME         &kp UP             &kp END             &kp PG_DOWN          ___       &kp HU_N7         &kp HU_N8          &kp HU_N9         ___
+            &kp LALT        &hml LGUI LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    &caps_word           ___       &hmr RCTRL HU_N4  &hmr RSHIFT HU_N5  &hmr RGUI  HU_N6  ___
+  ___       &kp KP_NUMLOCK  &kp LC(X)        &kp LC(C)          &kp LC(V)           &kp LS(LC(V))        ___       &kp HU_N1         &kp HU_N2          &kp  HU_N3        ___            ___
+                                             ___                ___                 ___                  ___       &kp HU_N0         ___
             >;
         };
         fun_layer {
             bindings = <
-            &bt BT_SEL 2           ___         &kp C_VOL_UP      &kp C_BRI_UP          &kp PSCRN          &kp F12      &kp F7       &kp F8          &kp F9      ___
-            &bt BT_SEL 1           ___         &kp C_VOL_DN      &kp C_BRI_DN          ___                &kp F11      &kp F4       &kp F5          &kp F6      ___
-&bt BT_CLR  &bt BT_SEL 0           ___         &kp C_MUTE        &kp C_BKLT_TOG        ___                &kp F10      &kp F1       &kp F2          &kp F3      ___    &tog GAME
-                                      ___             ___             ___                        ___           ___               ___
+            &bt BT_SEL 2       ___                ___              ___            &kp PSCRN            &kp F12      &kp F7       &kp F8      &kp F9      ___
+            &bt BT_SEL 1       &kp LGUI           &kp LSHIFT       &kp LCTRL      &kp C_BKLT_TOG       &kp F11      &kp F4       &kp F5      &kp F6      ___
+&bt BT_CLR  &bt BT_SEL 0       &kp C_VOL_DN       &kp C_VOL_UP     &kp C_BRI_DN   &kp C_BRI_UP         &kp F10      &kp F1       &kp F2      &kp F3      ___    &tog GAME
+                                                  ___              &kp C_MUTE     &kp C_PLAY_PAUSE     ___           ___               ___
             >;
         };
         game_layer {

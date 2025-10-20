@@ -63,3 +63,6 @@
 
 // caps word on index fingers
 // ZMK_COMBO(capsw, &caps_word,             LM1 RM1,     BASE, COMBO_TERM_FAST)
+
+ZMK_COMBO(shiftcoppy, &kp LS(LC(C)),     LB2 LB3,     BASE, COMBO_TERM_SLOW)
+ZMK_COMBO(shiftpaste, &kp LS(LC(V)),     LB1 LB2,     BASE, COMBO_TERM_SLOW)
