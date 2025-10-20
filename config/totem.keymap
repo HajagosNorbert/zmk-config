@@ -109,7 +109,7 @@ ZMK_BEHAVIOR(hu_i_acute_morph, mod_morph,
         };
         num_layer {
             bindings = <
-            &kp PG_UP       &kp HOME         &kp UP             &kp END             &kp PG_DOWN          ___       &kp HU_N7         &kp HU_N8          &kp HU_N9         ___
+            &kp PG_UP       &kp HOME         &kp UP             &kp END             &kp PG_DN          ___       &kp HU_N7         &kp HU_N8          &kp HU_N9         ___
             &kp LALT        &hml LGUI LEFT   &hml LSHIFT DOWN   &hml LCTRL RIGHT    &caps_word           ___       &hmr RCTRL HU_N4  &hmr RSHIFT HU_N5  &hmr RGUI  HU_N6  ___
   ___       &kp KP_NUMLOCK  &kp LC(X)        &kp LC(C)          &kp LC(V)           &kp LS(LC(V))        ___       &kp HU_N1         &kp HU_N2          &kp  HU_N3        ___            ___
                                              ___                ___                 ___                  ___       &kp HU_N0         ___
