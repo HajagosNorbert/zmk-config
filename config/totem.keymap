@@ -96,7 +96,7 @@ ZMK_BEHAVIOR(hu_i_acute_morph, mod_morph,
                 &kp HU_Q         &kp HU_W         &kp HU_E            &kp HU_R          &kp HU_T           &kp HU_Z     &kp HU_U          &kp HU_I            &kp HU_O         &kp HU_P
                 &hml LALT HU_A  &hml LGUI HU_S    &hml LSHIFT HU_D    &hml LCTRL HU_F   &kp HU_G           &kp HU_H     &hmr RCTRL HU_J   &hmr RSHIFT HU_K    &hmr RGUI HU_L   &hmr LALT HU_E_ACUTE
       &kp ESC   &kp HU_Y         &kp HU_X         &kp HU_C            &kp HU_V          &kp HU_B           &kp HU_N     &kp HU_M          &kp HU_COMMA   &kp HU_PERIOD     &kp HU_MINUS        &kp HU_A_ACUTE
-                                                  &kp F13             &kp TAB           &lt NUM SPACE      &lt SYM RET  &lt FUN BSPC      &kp DEL
+                                                  &kp F13             &lt FUN TAB       &lt NUM SPACE      &lt SYM RET  &lt FUN BSPC      &kp DEL
             >;
         };
         symbol_layer {
